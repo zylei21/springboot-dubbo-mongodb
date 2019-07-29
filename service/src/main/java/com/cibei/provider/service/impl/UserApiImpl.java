@@ -52,6 +52,5 @@ public class UserApiImpl implements UserApi {
         Optional<User> user1 = userDao.findById(user.getId());
         userDao.delete(user1.get());
         userDao.insert(user);
-
     }
 }
